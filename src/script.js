@@ -24,6 +24,7 @@ const bottomOfWebpage = document.querySelector(".bottomOfWebpage");
 
 let percentValue = 0;
 let audioPlayStatus = false;
+backgroundMusic.volume = 0.1;
 
 let increment = setInterval(() => {
     percentValue++;
@@ -83,8 +84,6 @@ function TriggerIntro(){
         businessCard.classList.remove("hidden");
         bottomOfWebpage.classList.remove("hidden");
     },5200);
-    // setTimeout(() => {
-    // },10000);
 }
 
 function ShowInstagramDescription(){
