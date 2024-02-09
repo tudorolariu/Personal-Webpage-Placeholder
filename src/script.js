@@ -24,7 +24,7 @@ const bottomOfWebpage = document.querySelector(".bottomOfWebpage");
 
 let percentValue = 0;
 let audioPlayStatus = false;
-backgroundMusic.volume = 0.1;
+backgroundMusic.volume = 0.4;
 
 let increment = setInterval(() => {
     percentValue++;
