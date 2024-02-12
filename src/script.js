@@ -18,7 +18,9 @@ const scrollIndicator = document.querySelector(".scrollIndicator");
 const businessCard = document.querySelector("#businessCard");
 const instagramButton = document.getElementById("instagramButton");
 const instagramDescription = document.querySelector(".instagramDescription");
-const instagramDescriptionCloseButton = document.getElementById("instagramDescriptionCloseButton");
+const instagramDescriptionCloseButton = document.getElementById(
+  "instagramDescriptionCloseButton"
+);
 
 const bottomOfWebpage = document.querySelector(".bottomOfWebpage");
 
@@ -27,85 +29,88 @@ let audioPlayStatus = false;
 backgroundMusic.volume = 0.4;
 
 let increment = setInterval(() => {
-    percentValue++;
-    percent.textContent = `${percentValue}%`;
+  percentValue++;
+  percent.textContent = `${percentValue}%`;
 
-    if(percentValue == 100){
-        clearInterval(increment);
-        loadingFrame.classList.remove("active");
-        soundOnParagraph.classList.add("shown");
-        enterButton.classList.add("shown");
-    }
-},20);
+  if (percentValue == 100) {
+    clearInterval(increment);
+    loadingFrame.classList.remove("active");
+    soundOnParagraph.classList.add("shown");
+    enterButton.classList.add("shown");
+  }
+}, 20);
 
-function PlayPauseMusic(){
-    if(audioPlayStatus == false){
-        audioPlayStatus = true;
-        backgroundMusic.play();
-        playPauseIcon.classList.remove("fa-circle-play");
-        playPauseIcon.classList.add("fa-circle-pause");
-    }else{
-        audioPlayStatus = false;
-        backgroundMusic.pause();
-        playPauseIcon.classList.remove("fa-circle-pause");
-        playPauseIcon.classList.add("fa-circle-play");
-    }
+function PlayPauseMusic() {
+  if (audioPlayStatus == false) {
+    audioPlayStatus = true;
+    backgroundMusic.play();
+    playPauseIcon.classList.remove("fa-circle-play");
+    playPauseIcon.classList.add("fa-circle-pause");
+  } else {
+    audioPlayStatus = false;
+    backgroundMusic.pause();
+    playPauseIcon.classList.remove("fa-circle-pause");
+    playPauseIcon.classList.add("fa-circle-play");
+  }
 }
 
-function TriggerIntro(){
-    setTimeout(() => {
-        PlayPauseMusic();
-    },300);
-    setTimeout(() => {
-        dropDownBackground.classList.add("shown");
-    },350);
+function TriggerIntro() {
+  setTimeout(() => {
+    PlayPauseMusic();
+  }, 300);
+  setTimeout(() => {
+    dropDownBackground.classList.add("shown");
+  }, 350);
 
-    // Clear Screen
-    setTimeout(() => {
-        loadingScreen.classList.add("hidden");
-    },1100);
+  // Clear Screen
+  setTimeout(() => {
+    loadingScreen.classList.add("hidden");
+  }, 1100);
 
-    // Display Main Elements
-    setTimeout(() => {
-        bannerTitleRow.classList.add("shown");
-    },1150);
-    setTimeout(() => {
-        bannerWordComing.classList.add("shown");
-    },1200);
-    setTimeout(() => {
-        bannerWordSoon.classList.add("shown");
-    },1800);
-    setTimeout(() => {
-        bannerDescription.classList.add("shown");
-        audioButton.classList.add("shown");
-    },2400);
-    setTimeout(() => {
-        scrollIndicator.classList.add("shown");
-        businessCard.classList.remove("hidden");
-        bottomOfWebpage.classList.remove("hidden");
-    },5200);
+  // Display Main Elements
+  setTimeout(() => {
+    bannerTitleRow.classList.add("shown");
+  }, 1150);
+  setTimeout(() => {
+    bannerWordComing.classList.add("shown");
+  }, 1200);
+  setTimeout(() => {
+    bannerWordSoon.classList.add("shown");
+  }, 1800);
+  setTimeout(() => {
+    bannerDescription.classList.add("shown");
+    audioButton.classList.add("shown");
+  }, 2400);
+  setTimeout(() => {
+    scrollIndicator.classList.add("shown");
+    businessCard.classList.remove("hidden");
+    bottomOfWebpage.classList.remove("hidden");
+  }, 5200);
 }
 
-function ShowInstagramDescription(){
-    instagramDescription.classList.remove("hidden");
-    instagramDescription.classList.add("shown");
+function ShowInstagramDescription() {
+  instagramDescription.classList.remove("hidden");
+  instagramDescription.classList.add("shown");
 }
 
-function HideInstagramDescription(){
-    instagramDescription.classList.remove("shown");
-    instagramDescription.classList.add("hiding");
-    setTimeout(() => {
-        instagramDescription.classList.remove("hiding");
-    },500);
+function HideInstagramDescription() {
+  instagramDescription.classList.remove("shown");
+  instagramDescription.classList.add("hiding");
+  setTimeout(() => {
+    instagramDescription.classList.remove("hiding");
+  }, 500);
 }
 
-setInterval(function(){
-    if(!businessCard.matches(':hover')){
-       HideInstagramDescription();
-    }
-}, 500)
+setInterval(function () {
+  if (!businessCard.matches(":hover")) {
+    HideInstagramDescription();
+  }
+}, 500);
 
 enterButton.addEventListener("click", TriggerIntro);
 audioButton.addEventListener("click", PlayPauseMusic);
 instagramButton.addEventListener("click", ShowInstagramDescription);
-instagramDescriptionCloseButton.addEventListener("click", HideInstagramDescription);
+instagramDescriptionCloseButton.addEventListener(
+  "click",
+  HideInstagramDescription
+);
