@@ -635,7 +635,7 @@ span {
   background-color: #000;
   line-height: 50px;
   border-radius: 50%;
-  margin: 0 15px;
+  margin: 0 7px;
   cursor: pointer;
   transition: 0.5s;
 }
@@ -768,7 +768,9 @@ span {
   }
   /* Contact links */
   .backSide li {
-    margin: 0 11px;
+    height: 45px;
+    width: 45px;
+    margin: 0 5px;
   }
   .instagramDescription {
     width: 280px;
