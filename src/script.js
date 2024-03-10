@@ -84,12 +84,12 @@ function TriggerIntro() {
   setTimeout(() => {
     scrollIndicator.classList.add("shown");
     businessCard.classList.remove("hidden");
+    instagramDescription.classList.remove("hidden");
     bottomOfWebpage.classList.remove("hidden");
   }, 5200);
 }
 
 function ShowInstagramDescription() {
-  instagramDescription.classList.remove("hidden");
   instagramDescription.classList.add("shown");
 }
 
