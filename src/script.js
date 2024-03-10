@@ -65,6 +65,7 @@ function TriggerIntro() {
   // Clear Screen
   setTimeout(() => {
     loadingScreen.classList.add("hidden");
+    scrollIndicator.classList.remove("hidden");
   }, 1100);
 
   // Display Main Elements
