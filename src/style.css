@@ -512,7 +512,7 @@ a {
     text-align: center;
   }
   .bannerTitleRow.shown {
-    top: 25vh;
+    top: 23vh;
   }
   .bannerWordSoon {
     padding-top: 3vh !important;
@@ -521,6 +521,9 @@ a {
     margin: 0;
     padding: 0;
   }
+  .bannerDescription.shown {
+    top: 43vh;
+  }
   #banner h2 {
     text-align: center;
     width: 200px;
@@ -528,7 +531,7 @@ a {
     font-size: 17px;
   }
   .scrollIndicator.shown {
-    top: 77vh;
+    top: 68vh;
   }
   .scrollIndicator span {
     top: 80vh;
@@ -747,7 +750,7 @@ span {
 
 @media screen and (max-width: 1000px) {
   #businessCard {
-    top: 90vh;
+    top: 87vh;
     height: 370px;
     width: 240px;
   }
