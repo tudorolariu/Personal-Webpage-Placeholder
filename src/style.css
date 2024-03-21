@@ -445,7 +445,7 @@ a {
 
 .bannerDescription.shown {
   opacity: 1;
-  top: 48vh;
+  top: 50vh;
   animation: showBannerDescription 3s ease forwards;
 }
 
@@ -462,7 +462,7 @@ a {
 .scrollIndicator {
   opacity: 0;
   position: absolute;
-  top: 74vh;
+  top: 79vh;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -522,7 +522,7 @@ a {
     padding: 0;
   }
   .bannerDescription.shown {
-    top: 43vh;
+    top: 45vh;
   }
   #banner h2 {
     text-align: center;
@@ -531,7 +531,7 @@ a {
     font-size: 17px;
   }
   .scrollIndicator.shown {
-    top: 68vh;
+    top: 73vh;
   }
   .scrollIndicator span {
     top: 80vh;
@@ -750,7 +750,7 @@ span {
 
 @media screen and (max-width: 1000px) {
   #businessCard {
-    top: 87vh;
+    top: 95vh;
     height: 370px;
     width: 240px;
   }
