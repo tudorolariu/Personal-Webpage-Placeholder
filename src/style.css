@@ -531,7 +531,7 @@ a {
     font-size: 17px;
   }
   .scrollIndicator.shown {
-    top: 73vh;
+    top: 71vh;
   }
   .scrollIndicator span {
     top: 80vh;
@@ -744,13 +744,15 @@ span {
 
 .bottomOfWebpage {
   /* scroll-snap-align: end; */
-  height: 70vh;
+  top: 167vh;
+  height: 1px;
+  /* height: 67vh; */
   content: "";
 }
 
 @media screen and (max-width: 1000px) {
   #businessCard {
-    top: 95vh;
+    top: 90vh;
     height: 370px;
     width: 240px;
   }
@@ -787,6 +789,7 @@ span {
     right: -6px;
   }
   .bottomOfWebpage {
-    height: 60vh;
+    top: 160vh;
+    /* height: 60vh; */
   }
 }
