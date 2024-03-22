@@ -233,7 +233,7 @@ a {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
   #loadingScreen {
     font-size: 25px;
   }
@@ -265,7 +265,7 @@ a {
       transform: translate(-50%, -50%);
     }
     100% {
-      transform: translate(-50%, -27vh);
+      transform: translate(-50%, -24vh);
     }
   }
   @keyframes showEnterButton {
@@ -744,13 +744,13 @@ span {
 
 .bottomOfWebpage {
   /* scroll-snap-align: end; */
-  height: 67vh;
+  height: 63vh;
   content: "";
 }
 
 @media screen and (max-width: 1000px) {
   #businessCard {
-    top: 93vh;
+    top: 92vh;
     height: 370px;
     width: 240px;
   }
@@ -787,6 +787,6 @@ span {
     right: -6px;
   }
   .bottomOfWebpage {
-    height: 60vh;
+    height: 55vh;
   }
 }
