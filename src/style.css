@@ -265,7 +265,7 @@ a {
       transform: translate(-50%, -50%);
     }
     100% {
-      transform: translate(-50%, -30vh);
+      transform: translate(-50%, -29vh);
     }
   }
   @keyframes showEnterButton {
