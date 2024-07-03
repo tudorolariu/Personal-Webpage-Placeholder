@@ -551,9 +551,9 @@ a {
 }
 
 #businessCard {
-  top: 98vh;
+  top: 100vh;
   left: 50%;
-  transform: translate(-50%);
+  transform: translate(-50%, -3.6%);
   height: 400px;
   width: 290px;
   font-family: "Goldman", sans-serif;
@@ -606,7 +606,7 @@ a {
 span {
   /* Make both Resume & Contact span ?? */
   font-size: 25px;
-  margin: 20px 0;
+  margin: 15px 0;
 }
 
 .backSide img {
@@ -750,7 +750,6 @@ span {
 
 @media screen and (max-width: 1000px) {
   #businessCard {
-    top: 92vh;
     height: 370px;
     width: 240px;
   }
